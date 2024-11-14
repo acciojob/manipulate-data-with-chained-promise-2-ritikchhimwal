@@ -2,7 +2,7 @@ function getNumbersArray() {
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve([1, 2, 3, 4]);
-        });
+        }, 500); // Adjusted to 0.5 seconds
       });
     }
 
@@ -13,7 +13,7 @@ function getNumbersArray() {
           const evenNumbers = arr.filter(num => num % 2 === 0);
           document.getElementById('output').textContent = evenNumbers.join(', ');
           resolve(evenNumbers);
-        }, 1000); // Adjusted to 0.5 second
+        }, 500); // Adjusted to 0.5 second
       });
     }
 
