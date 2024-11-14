@@ -1,9 +1,8 @@
-//your JS code here. If required.
 function getNumbersArray() {
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve([1, 2, 3, 4]);
-        }, 1000);
+        }, 500); // Adjusted to 0.5 seconds
       });
     }
 
@@ -14,7 +13,7 @@ function getNumbersArray() {
           const evenNumbers = arr.filter(num => num % 2 === 0);
           document.getElementById('output').textContent = evenNumbers.join(', ');
           resolve(evenNumbers);
-        }, 1000);
+        }, 500); // Adjusted to 0.5 second
       });
     }
 
@@ -25,7 +24,7 @@ function getNumbersArray() {
           const multipliedNumbers = arr.map(num => num * 2);
           document.getElementById('output').textContent = multipliedNumbers.join(', ');
           resolve(multipliedNumbers);
-        }, 2000);
+        }, 500); // Adjusted to 0.5 second
       });
     }
 
